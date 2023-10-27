@@ -1,0 +1,38 @@
+.title-loader {
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin-bottom: 100px;
+}
+.centered{
+	filter: blur(10px) contrast(20);
+}
+.blob-1,.blob-2{
+	width:70px;
+	height:70px;
+	position:absolute;
+	background:#0586dc;
+	border-radius:50%;
+	top:50%;
+  left:50%;
+	transform:translate(-50%,-50%);
+}
+.blob-1{
+	left:10%;
+	animation:osc-l 2.5s ease infinite;
+}
+.blob-2{
+	left:90%;
+	animation:osc-r 2.5s ease infinite;
+	background:rgb(3, 192, 239);
+}
+@keyframes osc-l{
+	0%{left:20%;}
+	50%{left:50%;}
+	100%{left:20%;}
+}
+@keyframes osc-r{
+	0%{left:80%;}
+	50%{left:50%;}
+	100%{left:80%;}
+}
